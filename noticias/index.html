@@ -1,28 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias Cidade</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="./assets/img/logo.png" alt="Logo Noticias Cidade">
-            <nav>
+    <header class="hero">
+        <img src="./assets/img/logo.png" alt="Logo noticias cidade">
+        <nav class="hero-nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Internacional</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="news">
+            <aside class="news-aside">
+                <section>
+                    <header class="news-aside-title"><h2>Entrevistas</h2></header>
+                    <ul>
+                        <li><a href="#">Name 0</a></li>
+                        <li><a href="#">Name 1</a></li>
+                        <li><a href="#">Name 2</a></li>
+                        <li><a href="#">Name 3</a></li>
+                        <li><a href="#">Name 4</a></li>
+                        <li><a href="#">Name 5</a></li>
+                        <li><a href="#">Name 6</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <header class="news-aside-title"><h2>News</h2></header>
+                    <label for="email" class="news-aside-label">Email:</label>
+                    <input type="email" name="email" placeholder="E-mail" class="news-aside-ip"><button type="submit" class="news-aside-bt">Cadastrar</button>
+                </section>
+            </aside>
+            <article class="news-primary">
+                <header class="news-primary-title"><h2>Ultimas noticias</h2></header>
+                <img src="" alt="" class="news-primary-img">
+                <p class="news-primary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque suscipit, nostrum magnam, nulla voluptatem, odio sequi dolorem qui dignissimos autem dicta laborum modi natus asperiores. Accusamus inventore obcaecati fuga nostrum!</p>
+                <p><a href="#" class="news-primary-link">Leia mais</a></p>
+            </article>
+            <article class="news-primary">
+                <header class="news-primary-title"><h2>Destaque</h2></header>
+                <img src="" alt="" class="news-primary-img">
+                <p class="news-primary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque suscipit, nostrum magnam, nulla voluptatem, odio sequi dolorem qui dignissimos autem dicta laborum modi natus asperiores. Accusamus inventore obcaecati fuga nostrum!</p>
+                <p><a href="#" class="news-primary-link">Leia mais</a></p>
+            </article>
+            <article class="news-secondary">
+                <header class="news-secondary-title"><h2>Mundo</h2></header>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Brasil</a></li>
-                    <li><a href="#">Internacional</a></li>
-                    <li><a href="#">Economia</a></li>
-                    <li><a href="#">Saude</a></li>
-                    <li><a href="#">Ciencia</a></li>
-                    <li><a href="#">Fotos</a></li>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-    </div>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="news-secondary">
+                <header class="news-secondary-title"><h2>Noticias recentes</h2></header>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="news-secondary-img">
+                        <h3 class="news-secondary-title">Teste</h3>
+                        <p class="news-secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p><span>Noticias Cidade</span> &copy; 2023</p>
+    </footer>
 </body>
 </html>
