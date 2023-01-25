@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+}
+
 .hero {
   display: flex;
   background-image: url("../img/fundo.png");
@@ -127,22 +131,31 @@
 }
 .news-secondary ul {
   background-color: #fff;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 .news-secondary ul li {
   border-bottom: 1px solid #ccc;
+  position: relative;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
-  height: 130px;
 }
-.news-secondary ul li img {
-  width: 45%;
-  height: 120px;
+.news-secondary ul li .content {
+  width: 300px;
+  margin: 10px;
 }
-.news-secondary ul li h3 {
-  text-transform: uppercase;
+.news-secondary ul li .content h3 {
   color: #294c71;
-  width: 55%;
+}
+.news-secondary ul li .imgBx {
+  max-width: 80px;
+  flex: 0 0 80px;
+}
+.news-secondary ul li .imgBx img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
