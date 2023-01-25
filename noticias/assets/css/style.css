@@ -39,4 +39,55 @@
   background-color: red;
 }
 
+.news {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: red;
+}
+.news ul {
+  list-style: none;
+}
+.news ul a {
+  text-decoration: none;
+}
+.news-secondary {
+  width: 20%;
+  padding: 7px;
+  background-image: url("../img/fundo-caixa.png");
+}
+.news-secondary-aside {
+  padding: 5px;
+  background: #fff;
+}
+.news-secondary-aside-title {
+  color: #fff;
+  background-color: #294c71;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.news-secondary-aside ul li a {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  padding: 7px;
+}
+.news-secondary-aside ul li a:hover {
+  background-color: #ccc;
+}
+.news-secondary-aside section label {
+  font-weight: bold;
+}
+.news-secondary-aside-inp {
+  margin: 5px 0;
+  width: 98%;
+  height: 30px;
+}
+.news-secondary-aside-btn {
+  background-color: #EB0039;
+  border: solid 1px #9c0027;
+  width: 30%;
+  height: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */

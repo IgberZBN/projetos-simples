@@ -28,4 +28,49 @@
 
                     &:hover
                         background-color: red
-                        
+
+.news
+    @include mixin.container
+    @include mixin.resetNav
+    background: red            
+
+    &-secondary
+        width: 20%
+        padding: 7px
+        background-image: variable.$background
+
+        &-aside
+            padding: 5px
+            background: variable.$text-color-2
+    
+            &-title
+                @include mixin.title    
+                margin-bottom: 10px
+
+            ul
+                li
+                    a
+                        color: variable.$text-color-1
+                        display: inline-block
+                        width: 100% 
+                        padding: 7px
+
+                        &:hover
+                            background-color: #ccc
+
+            section
+
+                label
+                    font-weight: bold
+
+            &-inp
+                margin: 5px 0
+                width: 98%
+                height: 30px
+
+            &-btn
+                background-color: variable.$background-secondary
+                border: solid 1px variable.$background-secondary-dark
+                width: 30%
+                height: 30px
+

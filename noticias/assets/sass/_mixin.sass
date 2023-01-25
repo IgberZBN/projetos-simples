@@ -14,3 +14,13 @@
     display: flex
     align-items: center
     justify-content: center
+
+@mixin container
+    max-width: variable.$container-width
+    margin: 0 auto
+    padding: 1rem
+
+@mixin title
+    color: variable.$text-color-2
+    background-color: variable.$background-primary
+    padding: 3px
