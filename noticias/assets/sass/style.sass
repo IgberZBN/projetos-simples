@@ -1,137 +1,31 @@
-@use 'mixins'
 @use 'variable'
+@use 'mixin'
+
 *
     font-family: sans-serif
     padding: 0
     margin: 0
     box-sizing: border-box
 
-body
-    background-color: #000
-
-
 .hero
-    display: flex
-    background-image: url('../img/fundo.png')
-    background-position: bottom
+    @include mixin.backgroundHero
+    @include mixin.resetNav
+    @include mixin.flexCenter
     height: 200px
     flex-direction: column
-    @include mixins.nav-style
-    @include mixins.flex-center
-    
+
     &-nav
         margin: 10px 0 50px
         ul
             height: 100%
-            @include mixins.flex-center
-
-        li
-            background-color: variable.$secondary-color
-            padding: 10px
-            
-            a
-                color: variable.$title-color
-                text-decoration: none
-
-.news
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-evenly
-    @include mixins.nav-style
-    @include mixins.container
-
-    &-aside
-        @include mixins.background
-        width: 20%
-
-        &-title
-            @include mixins.title
-            margin: 15px 0
-
-        li
-            margin: 10px 0
-            padding: 5px
-
-            &:hover
-                background-color: #ccc
-
-            a
-                color: variable.$text-color
-                width: 100%
-                display: inline-block
-                text-decoration: none
-
-        section
-            background-color: variable.$title-color
-
-            form
-                input
-                    width: 80%
-                    height: 30px
-                    border: none
-                label
-                    display: block
-                    font-weight: bold
-                button
-                    padding: 7px
-                    color: variable.$title-color
-                    background-color: variable.$secondary-color
-                    border: none
-                    display: block
-
-    &-primary
-        @include mixins.background
-        width: 35%
-        height: 360px
-        section
-            padding: 5px
-            background-color: variable.$title-color
-        &-title
-            @include mixins.title
-            margin: 10px 0
-        &-sub-title
-            background-color: variable.$secondary-color
-            display: inline-block
-        &-link
-            color: variable.$secondary-color
-
-        img
-            border: 1px solid #ccc
-            width: 100%
-            height: 200px
-            
-
-    &-secondary
-        width: 35%
-        @include mixins.background
-        &-title
-            @include mixins.title
-
-        ul
-            background-color: variable.$title-color
-            position: relative
-            flex-wrap: wrap
-            justify-content: space-between
-            align-items: center 
-            padding: 5px
-
+            @include mixin.flexCenter
             li
-                border-bottom: 1px solid #ccc
-                position: relative
-                width: 100%
-                display: flex
-                .content
-                    width: 300px
-                    margin: 10px
-                    h3
-                        color: variable.$primary-color
-    
-                .imgBx
-                    max-width: 80px
-                    flex: 0 0 80px
-                    
-                    img
-                        max-width: 100%
+                a
+                    background-color: variable.$background-secondary
+                    color: variable.$text-color-2
+                    padding: 10px
+                    display: inline-block
+
+                    &:hover
+                        background-color: red
                         
-
-

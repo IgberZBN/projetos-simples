@@ -5,22 +5,20 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #000;
-}
-
 .hero {
-  display: flex;
   background-image: url("../img/fundo.png");
   background-position: bottom;
-  height: 200px;
-  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
+  flex-direction: column;
 }
 .hero ul {
   list-style: none;
+}
+.hero ul a {
+  text-decoration: none;
 }
 .hero-nav {
   margin: 10px 0 50px;
@@ -31,131 +29,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.hero-nav li {
+.hero-nav ul li a {
   background-color: #EB0039;
+  color: #fff;
   padding: 10px;
-}
-.hero-nav li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.news {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-.news ul {
-  list-style: none;
-}
-.news-aside {
-  background-image: url("../img/fundo-caixa.png");
-  padding: 10px;
-  width: 20%;
-}
-.news-aside-title {
-  background-color: #294c71;
-  color: #fff;
-  margin: 15px 0;
-}
-.news-aside li {
-  margin: 10px 0;
-  padding: 5px;
-}
-.news-aside li:hover {
-  background-color: #ccc;
-}
-.news-aside li a {
-  color: #000;
-  width: 100%;
-  display: inline-block;
-  text-decoration: none;
-}
-.news-aside section {
-  background-color: #fff;
-}
-.news-aside section form input {
-  width: 80%;
-  height: 30px;
-  border: none;
-}
-.news-aside section form label {
-  display: block;
-  font-weight: bold;
-}
-.news-aside section form button {
-  padding: 7px;
-  color: #fff;
-  background-color: #EB0039;
-  border: none;
-  display: block;
-}
-.news-primary {
-  background-image: url("../img/fundo-caixa.png");
-  padding: 10px;
-  width: 35%;
-  height: 360px;
-}
-.news-primary section {
-  padding: 5px;
-  background-color: #fff;
-}
-.news-primary-title {
-  background-color: #294c71;
-  color: #fff;
-  margin: 10px 0;
-}
-.news-primary-sub-title {
-  background-color: #EB0039;
   display: inline-block;
 }
-.news-primary-link {
-  color: #EB0039;
-}
-.news-primary img {
-  border: 1px solid #ccc;
-  width: 100%;
-  height: 200px;
-}
-.news-secondary {
-  width: 35%;
-  background-image: url("../img/fundo-caixa.png");
-  padding: 10px;
-}
-.news-secondary-title {
-  background-color: #294c71;
-  color: #fff;
-}
-.news-secondary ul {
-  background-color: #fff;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-}
-.news-secondary ul li {
-  border-bottom: 1px solid #ccc;
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-.news-secondary ul li .content {
-  width: 300px;
-  margin: 10px;
-}
-.news-secondary ul li .content h3 {
-  color: #294c71;
-}
-.news-secondary ul li .imgBx {
-  max-width: 80px;
-  flex: 0 0 80px;
-}
-.news-secondary ul li .imgBx img {
-  max-width: 100%;
+.hero-nav ul li a:hover {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
