@@ -32,12 +32,14 @@
 .news
     @include mixin.container
     @include mixin.resetNav
-    background: red            
+    display: flex
+    // background: red            
 
     &-secondary
         width: 20%
         padding: 7px
         background-image: variable.$background
+        max-height: 520px
 
         &-aside
             padding: 5px
@@ -71,6 +73,76 @@
             &-btn
                 background-color: variable.$background-secondary
                 border: solid 1px variable.$background-secondary-dark
-                width: 30%
+                width: 40%
                 height: 30px
+                padding: 5px
+                color: variable.$text-color-2
+
+    &-main
+        // background-color: green
+        width: 80%
+        margin: 0 70px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        &-card
+            &-container
+                background-color: variable.$text-color-2
+                padding: 10px
+
+        &-card-main
+            padding: 7px
+            background-image: variable.$background
+            width: 40%
+            height: 390px
+
+
+            &-title
+                @include mixin.title
+            
+                &-secondary
+                    @include mixin.title-secondary
+                    margin: 10px 0 5px
+                    padding: 2px
+                    width: 53%
+            img
+                width: 100%
+                height: 220px
+
+            &-more
+                a
+                    color: variable.$background-secondary
+        
+        &-card-secondary
+            background-image: variable.$background
+            padding: 7px
+            width: 40%
+            margin-top: 10px
+            &-container
+                background-color: variable.$text-color-2
+                .container
+                    border-bottom: 1px solid #ccc
+                    position: relative
+                    max-width: 450px
+                    margin: 10px
+                    display: flex
+                    &-img
+                        // width: 20px
+                        // height: 100px
+                        // background-color: red
+                        // // flex: 0 0 150px
+                        img
+
+                            width: 150px
+                            height: 100px
+                    &-desc
+                        h3
+                            color: variable.$background-primary-light
+                            margin-left: 10px
+                        p
+                            margin-left: 5px
+                &-title
+                    @include mixin.title
+
 
