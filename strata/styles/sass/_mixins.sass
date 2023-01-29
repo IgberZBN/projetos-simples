@@ -1,0 +1,33 @@
+@use 'variables'
+
+@mixin imageAvatar
+    border-radius: 50%
+    width: max(120px, 35.4%)    
+
+
+@mixin bg-image($img)
+    background-position: top
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/img/#{$img}')
+
+@mixin anchor
+    position: sticky
+    top: 0
+    left: 0
+
+@mixin list-reset
+    ul
+        list-style: none
+
+@mixin link
+    &:hover
+        color: variables.$hover-1
+
+@mixin linkButton($border, $background, $color)
+    .button-default
+        background-color: $background
+        border: $border
+        display: inline-block
+        border-radius: 3px
+        padding: 12px
+        text-decoration: none
+        color: $color
