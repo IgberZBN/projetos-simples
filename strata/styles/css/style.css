@@ -61,10 +61,11 @@
 #container .main-left-header h1 span a {
   color: rgba(255, 255, 255, 0.1);
   text-decoration: underline dotted;
-  transition: color 0.5s;
+  transition: color 0.5s, text-decoration 0.5s;
 }
 #container .main-left-header h1 span a:hover {
   color: #20C997;
+  text-decoration: none;
 }
 #container .main-left-footer ul {
   list-style: none;
@@ -83,6 +84,7 @@
 }
 #container .main-left-footer ul li a:hover {
   color: #20C997;
+  text-decoration: none;
 }
 #container .main-left-footer p {
   margin-top: 10px;
@@ -95,6 +97,7 @@
 }
 #container .main-left-footer p a:hover {
   color: #20C997;
+  text-decoration: none;
 }
 #container .main-left-footer p span {
   color: rgba(255, 255, 255, 0.1);
